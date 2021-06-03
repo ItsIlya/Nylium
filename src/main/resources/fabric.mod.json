@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "nylium",
+  "version": "${version}",
+  "name": "Nylium",
+  "description": "",
+  "authors": [
+    "ItsIlya"
+  ],
+  "contact": {
+  },
+  "license": "MIT",
+  "environment": "server",
+  "entrypoints": {
+    "server": [
+      {
+        "adapter": "kotlin",
+        "value": "io.github.nyliumpowered.nylium"
+      }
+    ]
+  },
+  "mixins": [
+    "nylium.mixins.json"
+  ],
+  "depends": {
+    "java": ">=16",
+    "fabricloader": ">=0.11.3",
+    "minecraft": "1.17.x",
+    "fabric": "*"
+  }
+}
