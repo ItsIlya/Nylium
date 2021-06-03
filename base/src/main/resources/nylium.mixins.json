@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "io.github.nyliumpowered.nylium",
+  "package": "io.github.nyliumpowered.nylium.base.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
   ],

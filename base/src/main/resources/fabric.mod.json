@@ -15,7 +15,7 @@
     "server": [
       {
         "adapter": "kotlin",
-        "value": "io.github.nyliumpowered.nylium"
+        "value": "io.github.nyliumpowered.nylium.base.NyliumMod"
       }
     ]
   },
