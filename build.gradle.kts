@@ -38,9 +38,8 @@ allprojects {
     group = rootProject.group
     buildDir = rootProject.buildDir
 
-    license {
-        header = rootProject.file("HEADER")
-        include("**/*.java", "**/*.kt")
+    repositories {
+        mavenCentral()
     }
 
     dependencies {
@@ -54,6 +53,11 @@ allprojects {
         modImplementation("net.fabricmc:fabric-loader:$loaderVersion")
         modImplementation("net.fabricmc:fabric-language-kotlin:$fabricLanguageKotlinVersion")
         modImplementation("net.fabricmc.fabric-api:fabric-api:$fabricVersion")
+    }
+
+    license {
+        header = rootProject.file("HEADER")
+        include("**/*.java", "**/*.kt")
     }
 
     val shade by configurations.creating
