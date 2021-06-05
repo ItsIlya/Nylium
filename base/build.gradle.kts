@@ -7,4 +7,8 @@ repositories {
 }
 
 dependencies {
+    compileOnly(project(":api"))
+}
+
+loom {
 }
