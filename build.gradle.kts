@@ -84,7 +84,9 @@ allprojects {
             //archiveClassifier.set("dev")
         }
 
-        this["remapJar"].enabled = false
+        setOf("remapJar", "runServer", "runClient").forEach {
+            this[it].enabled = false
+        }
 
         withType<ShadowJar> {
             enabled = true
@@ -123,10 +125,6 @@ allprojects {
         }
 
         rootProject.tasks["publish"].dependsOn(shadowJar, remapMavenJar, sourcesJar, remapSourcesJar)
-    }
-
-    configure<net.fabricmc.loom.LoomGradleExtension> {
-        shareCaches = true
     }
 
     java {
